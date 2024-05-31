@@ -1,0 +1,239 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background: #fff;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+nav ul li a.signup {
+    background: #1a73e8;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+nav ul li a.signup:hover {
+    background: #1558b0;
+}
+
+.search-section {
+    background: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.search-section h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.search-section p {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.search-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-section input[type="text"] {
+    width: calc(50% - 10px);
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.search-section button {
+    padding: 10px 20px;
+    border: none;
+    background: #1a73e8;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px; /* Add margin to separate the button from the input fields */
+}
+
+.search-section button:hover {
+    background: #1558b0;
+}
+
+.upload-resume {
+    margin-bottom: 20px;
+}
+
+.upload-resume a {
+    text-decoration: none;
+    color: #1a73e8;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.stats img {
+    max-width: 50px;
+    margin-right: 10px;
+}
+
+.stats p {
+    color: #333;
+    margin: 5px 0;
+}
+
+#job-listings {
+    margin-top: 20px;
+}
+
+.job {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.job a {
+    text-decoration: none;
+    color: #1a73e8;
+}
+
+.job a:hover {
+    text-decoration: underline;
+}
+
+.job img {
+    max-width: 100px;
+    margin-right: 10px;
+}
+
+.job-details {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.job-info {
+    margin-left: 10px;
+    flex: 1;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .search-section h2 {
+        font-size: 24px;
+    }
+
+    .search-section input[type="text"] {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .search-section button {
+        width: 100%;
+    }
+
+    .job-details {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .job img {
+        margin-bottom: 10px;
+    }
+
+    .job-info {
+        margin-left: 0;
+    }
+}
+.loader {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #1a73e8;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 2s linear infinite;
+    margin: 20px auto;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@media (max-width: 480px) {
+    .search-section h2 {
+        font-size: 20px;
+    }
+
+    .search-section p {
+        font-size: 14px;
+    }
+
+    .search-section input[type="text"] {
+        font-size: 14px;
+    }
+
+    .search-section button {
+        font-size: 14px;
+    }
+}
